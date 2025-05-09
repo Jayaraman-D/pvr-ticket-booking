@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="stylesheets/newStyle.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Thanks for chossing PVR</h2>
+        <h3 class="movie-title"></h3>
+        <h4 class="hero"></h4>
+        <p>Choose the Date</p>
+        <input type="date" id="datePicker"> <br>
+        <div class="show-time">10.00 AM</div>
+        <div class="show-time">1.00 PM</div>
+        <div class="show-time">5.00 PM</div>
+        <div class="show-time">7.00 PM</div>
+        <div class="show-time">10.00 PM</div>
+        <br> <br>
+        <button type="button" class="booking-btn">Book Now</button>
+    </div>
+</body>
+<script>
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('datePicker').min = today;
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const movieTitle = localStorage.getItem('movieTitle');
+        const heroName = localStorage.getItem('heroName');
+
+        document.querySelector('.movie-title').textContent = movieTitle;
+        document.querySelector('.hero').textContent = heroName;
+    });
+
+
+
+</script>
+
+<script src="javascripts/booking.js"></script>
+
+</html>

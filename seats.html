@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seats</title>
+    <link rel="stylesheet" href="stylesheets/seats.css">
+</head>
+
+<body>
+    <header>
+        <h3 class="animated-text">Thanks for choosing PVR, please select your seats</h3>
+    </header>
+    <section>
+        <div class="container">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+
+        </div>
+
+        <div class="container">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+
+        </div>
+
+        <div class="container">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+
+        </div>
+
+    </section>
+
+    <div class="button-wrapper">
+        <button id="confirm-btn">Confirm Selection</button>
+      </div>
+
+    <footer>
+        <h5>All eyes are here!!!</h5>
+    </footer>
+
+</body>
+
+<script>
+    document.querySelectorAll('.seat').forEach(seat => {
+        seat.addEventListener('click', () => {
+            seat.classList.toggle('selected');
+        });
+    });
+</script>
+
+
+</html>
